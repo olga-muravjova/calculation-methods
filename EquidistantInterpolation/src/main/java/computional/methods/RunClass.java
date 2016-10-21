@@ -1,4 +1,4 @@
-package ComputionalMethods;
+package computional.methods;
 
 import controllers.Interpolator;
 import controllers.NodesCreator;

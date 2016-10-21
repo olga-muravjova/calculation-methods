@@ -1,4 +1,4 @@
-package ComputionalMethods;
+package computional.methods;
 
 import constants.Constants;
 
