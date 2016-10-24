@@ -32,7 +32,7 @@ public class NonLinearEquationSolver {
     }
 
     private boolean isSegmentAccurate(Segment curSegment) {
-        Double accuracy = 0.00001;
+        Double accuracy = 0.00000001;
         return curSegment.length() < 2 * accuracy;
     }
 
