@@ -47,6 +47,10 @@ public class Table extends JFrame {
             data[i][1] = String.valueOf(node.getY());
             data[i][2] = String.valueOf(node.getFirstDerivation());
             data[i][3] = String.valueOf(Math.abs(node.getFirstDerivationReal() - node.getFirstDerivation()));
+            if (i == 0 || i == nodes.size() - 1) {
+                i++;
+                continue;
+            }
             data[i][4] = String.valueOf(node.getSecondDerivation());
             data[i][5] = String.valueOf(Math.abs(node.getSecondDerivationReal() - node.getSecondDerivation()));
             i++;

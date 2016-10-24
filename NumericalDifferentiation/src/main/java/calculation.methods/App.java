@@ -25,8 +25,8 @@ public class App {
         differentiationsCalculator.calculateDifferentiations(nodes);
 
 
-        final String sortedTableName = "First and second differentiations";
+        //final String sortedTableName = "First and second differentiations";
         //create table
-        javax.swing.SwingUtilities.invokeLater(() -> createGUI(nodes, sortedTableName));
+        javax.swing.SwingUtilities.invokeLater(() -> createGUI(nodes, Constants.FUNC_NAME));
     }
 }
