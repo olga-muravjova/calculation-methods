@@ -55,6 +55,7 @@ public class App {
         //javax.swing.SwingUtilities.invokeLater(() -> createGUI(sortedNodes, sortedTableName));
 
         //interpolateByLagrange by Lagrange
+        //final ArrayList<Node> sortedNodesByF = Sorter.sortListOfNodesByF(reversedNodes, f);
         LagrangeInterpolator reversedLagrangeInterpolator = new LagrangeInterpolator(sortedNodes, polynomDegree);
         Double lagrangeResult = reversedLagrangeInterpolator.interpolate(f);
         //print result
@@ -65,7 +66,7 @@ public class App {
         ConsoleWriter.printDouble(accuracyString, abs(func.apply(lagrangeResult) - f));
 
         //second method, solving non-linear equation
-        LagrangeInterpolator lagrangeInterpolator = new LagrangeInterpolator(Sorter.sortListOfNodes(nodes, f), polynomDegree);
+        LagrangeInterpolator lagrangeInterpolator = new LagrangeInterpolator(Sorter.sortListOfNodesByF(0nodes, f), polynomDegree);
         NonLinearEquationSolver nonLinearEquationSolver =
                 new NonLinearEquationSolver(segmentStart, segmentEnd, lagrangeInterpolator, f);
         Double result = nonLinearEquationSolver.solveEquation();

@@ -15,4 +15,9 @@ public class Sorter {
         nodes.sort((Node n1, Node n2) -> Double.compare(abs(n1.getX() - x), abs(n2.getX() - x)));
         return nodes;
     }
+
+    public static ArrayList<Node> sortListOfNodesByF(ArrayList<Node> nodes, Double f) {
+        nodes.sort((Node n1, Node n2) -> Double.compare(abs(n1.getY() - f), abs(n2.getY() - f)));
+        return nodes;
+    }
 }
