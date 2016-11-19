@@ -11,10 +11,10 @@ import static java.lang.Math.sin;
  */
 public class Constants {
     public static final Function<Double, Double> FUNC = (Double x) -> cos(x) + 2 * x;
-    public static final String FUNC_NAME = "f(x) = cos(x) + 2*x";
+    public static final String FUNC_NAME = "f(x) = cos(x) + 2*x, отрезок [0,1] ";
     public static final Function<Double, Double> FUNC_DIFF_FIRST = (Double x) -> -sin(x) + 2;
     public static final Function<Double, Double> FUNC_DIFF_SECOND = (Double x) -> -cos(x);
-    public static final Double SEGMENT_START = 0.0;
-    public static final Double SEGMENT_END = 1.0;
+    public static final Double SEGMENT_START = 10.0;
+    public static final Double SEGMENT_END = 10.001;
     public static final int NUMBER_OF_NODES = 11;
 }
